@@ -6,7 +6,7 @@ const App = () => {
     <div className={styles.main}>
       <header>
         <div className={styles.headerContainer}>
-          <img src={logoImg} alt="Imagem de logo" width={180} />
+          <img src={logoImg} alt="Img logo" width={180} />
         </div>
       </header>
     </div>

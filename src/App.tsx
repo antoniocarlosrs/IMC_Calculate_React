@@ -9,6 +9,16 @@ const App = () => {
           <img src={logoImg} alt="Img logo" width={180} />
         </div>
       </header>
+
+      <div className={styles.container}>
+        <div className={styles.lefSide}>
+          ...
+        </div>
+
+        <div className={styles.rightSide}>
+          ...
+        </div>
+      </div>
     </div>
   )
 }

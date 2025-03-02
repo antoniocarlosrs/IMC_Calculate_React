@@ -61,11 +61,6 @@ body {
     opacity: .9;
 }
 
-.container .rightSide {
-    flex: 1;
-    margin-left: 40px;
-}
-
 /* Retirar as setinhas do input */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -75,4 +70,19 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type=number] {
     appearance: textfield;
+}
+
+/* Estilizaçãp do lado esquerdo */
+
+.container .rightSide {
+    flex: 1;
+    margin-left: 40px;
+    display: flex;
+}
+
+.container .rightSide .grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
 }

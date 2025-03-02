@@ -1,10 +1,10 @@
-import {Levels} from '../../helpers/imc';
+import {Level} from '../../helpers/imc';
 import styles from './GridItem.module.css';
 import upImage from '../../assets/up.png';
 import downImage from '../../assets/down.png';
 
 type Props = {
-    item: Levels
+    item: Level
 };
 
 export const GridItem = ({item} : Props) => {
@@ -18,6 +18,12 @@ export const GridItem = ({item} : Props) => {
             <div className={styles.gridTitle}>
                 {item.title}
             </div>
+
+            {item.yourIMC &&
+                <div className={styles.yourIMC}>
+                    Seu IMC é de {item.yourIMC} kg/m²
+                </div>            
+            }
 
             <div className={styles.gridInfo}>
             <>

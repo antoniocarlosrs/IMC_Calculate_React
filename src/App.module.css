@@ -86,3 +86,8 @@ input[type=number] {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
 }
+
+.container .rightSide .rightBig {
+    flex: 1;
+    display: flex;
+}

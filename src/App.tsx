@@ -3,6 +3,7 @@ import styles from "./App.module.css";
 import logoImg from "./assets/Logo1.png";
 import {levels, calculateImc, Level} from './helpers/imc';
 import { GridItem } from './components/GridItem';
+import leftArrowImage from './assets/leftarrow.png'
 
 const App = () => {
   const [heightFild, setHeightField] = useState<number>(0);
@@ -16,6 +17,13 @@ const App = () => {
     } else {
       alert('Digite todos os campos.');
     }
+  }
+
+  // Zerar o botão toshow
+  const handleBackButton = () => {
+    setToShow(null);
+    setHeightField(0);
+    setWeightField(0);
   }
 
   return (
@@ -64,7 +72,9 @@ const App = () => {
           }
           {toShow &&
             <div className={styles.rightBig}>
-              <div className={styles.rightArrow}></div>
+              <div className={styles.rightArrow} onClick={handleBackButton}>
+                <img src={leftArrowImage} alt="Botão seta esquerda" width={25}/>
+              </div>
               <GridItem item={toShow}/>
             </div>
           }

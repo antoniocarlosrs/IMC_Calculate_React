@@ -45,7 +45,8 @@ body {
 }
 
 .container .lefSide button {
-    background-color: #227C9D;
+    /* background-color: #227C9D; */
+    background-color: #7754D6;
     color: #FFF;
     font-size: 1.2rem;
     border: none;
@@ -90,4 +91,27 @@ input[type=number] {
 .container .rightSide .rightBig {
     flex: 1;
     display: flex;
+}
+
+.container .rightSide .rightArrow {
+    position: absolute;
+    /* background-color: #227C9D; */
+    background-color: #7754D6;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: -35px;
+    margin-top: 145px;
+    transition: all ease .3s;
+    z-index: 1;
+}
+
+.container .rightSide .rightArrow:hover {
+    /* opacity: .9; */
+    /* background: #9b82dd; */
+    background: #3A4B5C;
 }

@@ -49,6 +49,8 @@ const App = () => {
             placeholder="Digite sua altura"
             value={heightFild > 0 ? heightFild : ''}
             onChange={e => setHeightField(parseFloat(e.target.value))}
+            //abilitar inputs quando estiver com algo
+            disabled={toShow ? true : false}
           />
 
           <input
@@ -56,9 +58,13 @@ const App = () => {
             placeholder="Digite seu peso"
             value={weighttFild > 0 ? weighttFild : ''}
             onChange={e => setWeightField(parseFloat(e.target.value))}
+            //abilitar inputs quando estiver com algo
+            disabled={toShow ? true : false}
           />
 
-          <button onClick={handleCalculateButton}>Calcular</button>
+          <button onClick={handleCalculateButton} 
+            //abilitar botão quando estiver com algo no input
+            disabled={toShow ? true : false}>Calcular</button>
 
         </div>
 

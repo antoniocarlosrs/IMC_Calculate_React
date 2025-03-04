@@ -6,6 +6,11 @@ body {
     font-size: Arial, Helvetica, sans-serif;
 }
 
+/* Respiro no final */
+.main {
+    padding-bottom: 30px;
+}
+
 .headerContainer {
     max-width: 900px;
     margin: 20px auto;
@@ -125,4 +130,42 @@ input[type=number] {
     /* opacity: .9; */
     /* background: #9b82dd; */
     background: #3A4B5C;
+}
+
+/* Responsividade */
+
+@media (max-width: 885px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .container {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+
+    .container .lefSide {
+        margin-right: 0;
+    }
+
+    .container .rightSide {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .container .rightSide .rightArrow {
+        margin-left: 0;
+        margin-top: 0;
+        border-radius: 8px 1px 8px 1px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container .rightSide .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container .lefSide h1 {
+        font-size: 2rem;
+    }
 }

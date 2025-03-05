@@ -51,7 +51,8 @@ hr {
 .container .lefSide input {
     width: 100%;
     border: 0;
-    border-bottom: 2px solid rgba(150, 163, 171, .5);
+    border-bottom: 2px solid rgba(119, 84, 214, .5) ;
+    /* border-bottom: 2px solid rgba(150, 163, 171, .5); */
     padding: 10px 2px;
     margin-bottom: 1.2rem;
     font-size: .8rem;

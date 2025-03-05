@@ -37,7 +37,7 @@ hr {
 }
 
 .container .lefSide h1 {
-    margin: 0;
+    margin: 0 0 2.5rem;
     font-size: 2.5rem;
     color: #3A4B5C;
 }
@@ -75,7 +75,7 @@ hr {
     padding: 15px 0;
     width: 100%;
     cursor: pointer;
-    margin-top: 2.5rem;
+    margin-top: 3.8rem;
     transition: all ease .5s;
 }
 
@@ -161,6 +161,14 @@ input[type=number] {
     .container .rightSide {
         margin-left: 0;
         margin-top: 50px;
+    }
+
+    .container .lefSide h1{
+        margin: 0;
+    }
+
+    .container .lefSide button {
+        margin-top: 2rem;
     }
 
     .container .rightSide .rightArrow {

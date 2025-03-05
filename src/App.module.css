@@ -16,6 +16,15 @@ body {
     margin: 20px auto;
 }
 
+hr {
+    background: #7754D6;
+    /* background: #C6B1E0; */
+    width: 100%;
+    height: .01rem;
+    border: none;
+    margin: 1.5rem 0 2rem ;
+}
+
 .container {
     display: flex;
     max-width: 900px;

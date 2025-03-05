@@ -33,7 +33,7 @@ const App = () => {
           <img src={logoImg} alt="Img logo" width={180} />
         </div>
       </header>
-
+      <hr />
       <div className={styles.container}>
         <div className={styles.lefSide}>
           <h1>Calcule seu IMC</h1>
@@ -46,7 +46,7 @@ const App = () => {
 
           <input
             type="number"
-            placeholder="Digite sua altura"
+            placeholder="Digite sua altura Ex. 1.80"
             value={heightFild > 0 ? heightFild : ''}
             onChange={e => setHeightField(parseFloat(e.target.value))}
             //abilitar inputs quando estiver com algo
@@ -55,7 +55,7 @@ const App = () => {
 
           <input
             type="number"
-            placeholder="Digite seu peso"
+            placeholder="Digite seu peso Ex. 80.0"
             value={weighttFild > 0 ? weighttFild : ''}
             onChange={e => setWeightField(parseFloat(e.target.value))}
             //abilitar inputs quando estiver com algo
